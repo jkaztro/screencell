@@ -1,0 +1,65 @@
+app:
+  name: ElectronicSignApp
+  version: 1.0.0
+  settings:
+    debug: true
+
+logging:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    simple:
+      format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: simple
+  root:
+    level: INFO
+    handlers: [console]
+
+window:
+  width: 800
+  height: 600
+  maximized: true
+
+spinner:
+  text: 'TIPO DE CONTRASTE'
+  values:
+    - 'Opción 1: Fondo negro con borde fluorescente'
+    - 'Opción 2: Fondo intermitente fluorescente'
+  size: [350, 30]
+  background_color: [0, 0, 1, 1]
+  text_color: [0, 1, 1, 1]
+
+buttons:
+  show_message:
+    text: 'Mostrar Mensaje'
+    size: [150, 40]
+    background_color: [0.1, 0.5, 0.8, 1]
+  siren_buttons:
+    - text: 'Siren 1'
+      size: [150, 40]
+      background_color: [0.9, 0.1, 0.1, 1]
+    - text: 'Siren 2'
+      size: [150, 40]
+      background_color: [0.9, 0.1, 0.1, 1]
+    - text: 'Siren 3'
+      size: [150, 40]
+      background_color: [0.9, 0.1, 0.1, 1]
+  toggle_buttons:
+    text: 'Ocultar/Mostrar'
+    size: [150, 40]
+    background_color: [0.2, 0.6, 0.2, 1]
+
+colors:
+  text_colors_neon:
+    - [0, 1, 1, 1]
+    - [1, 0, 1, 1]
+    - [1, 1, 0, 1]
+  bg_colors_fluorescent:
+    - [1, 0, 0, 1]
+    - [0, 0.5, 1, 1]
+    - [1, 1, 0, 1]
+    - [0, 1, 1, 1]
+    - [0.5, 1, 0, 1]
